@@ -21,7 +21,7 @@ namespace UnitTestProject.Tests
             return t.DoubleToBinaryString(number);
         }
 
-        public void Insert_iLessThanj_ExceptionThrown(double number)
+        public void Insert_IncorrectNumber_ExceptionThrown(double number)
         {
             var t = new Tasks();
             Assert.Throws<ArgumentException>(() => t.DoubleToBinaryString(number));
